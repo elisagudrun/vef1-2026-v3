@@ -12,6 +12,6 @@
 main {
   flex: 1;
   width: var(--width-offset);
-  margin: 0 auto;
   max-width: var(--max-width);
+  margin: 0 auto;
 }
