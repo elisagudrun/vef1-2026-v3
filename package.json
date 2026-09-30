@@ -1,0 +1,21 @@
+{
+  "name": "vef1-2026-v3-main",
+  "version": "1.0.0",
+  "description": "Útgáfa 0.1.",
+  "license": "ISC",
+  "author": "Elisa",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "parcel index.html 'sidur/*.html' --lazy --no-cache",
+    "build": "parcel build index.html 'sidur/*.html'"
+  },
+  "dependencies": {
+    "node": "^26.10.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4",
+    "stylelint": "^17.15.0",
+    "stylelint-config-recess-order": "^7.8.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
