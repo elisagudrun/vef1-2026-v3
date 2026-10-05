@@ -1,0 +1,19 @@
+table th, table td {
+    padding: var(--spacing-half);
+}
+
+.table {
+    min-width: 700px;
+}
+
+.table-wrapper{
+    overflow: auto;
+    background-color: pink;
+}
+
+@media (width >= 900px) {
+  .card {
+    grid-column: span 6;
+    overflow: visible;
+  }
+}
