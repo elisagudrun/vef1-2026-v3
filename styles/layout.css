@@ -4,14 +4,29 @@
  */
 .wrapper {
   display: grid;
-  gap: 30px;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  gap: var(--layout-gap);
   min-height: 100vh;
-  margin-top: 10px;
+  margin-top: var(--layout-margin-top);
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
 }
 
 main {
-  flex: 1;
   width: var(--width-offset);
   max-width: var(--max-width);
   margin: 0 auto;
+}
+
+footer {
+  grid-area: footer;
 }

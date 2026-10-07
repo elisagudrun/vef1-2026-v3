@@ -4,26 +4,25 @@
  */
 
 form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 20px;
-
-  width: 50%;
+  display: grid;
+  gap: var(--gutter);
+  width: 100%;
 }
 
 fieldset {
+  display: grid;
+  gap: var(--gutter);
   border: 0;
 }
 
 fieldset legend {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
+  grid-column: 1 / -1;
+  margin-bottom: var(--spacing);
+  font-size: var(--font-size-legend);
 }
 
 fieldset div {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 fieldset div label {
@@ -33,15 +32,21 @@ fieldset div label {
 fieldset input,
 fieldset select,
 fieldset textarea {
-  padding: 10px;
   width: 100%;
-  border: 1px solid #000000;
-
-  background-color: #ffffff;
+  padding: var(--form-padding);
+  background-color: var(--color-input-background);
+  border: var(--border-width) var(--color-border);
 }
 
 fieldset input[type='checkbox'] {
   display: inline-block;
-  margin-right: 10px;
   width: auto;
+  margin-right: var(--spacing);
 }
+
+@media (width >= 700px) {
+  form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
