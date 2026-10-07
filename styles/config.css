@@ -26,7 +26,7 @@
   /** Bil **/
 
   /* Eitt bil, öll önnur bil eru margfeldi af því. */
-  --spacing: 12px;
+  --spacing: 10px;
   --spacing-quart: calc(var(--spacing) * 1/4);
   --spacing-double: calc(var(--spacing) * 2);
   --spacing-triple: calc(var(--spacing) * 3);
@@ -71,6 +71,7 @@
 --layout-margin-top: 10px;
 --card-image-height: 300px;
 --border-width: 1px;
+--border-style: solid;
 --form-padding: 10px;
 --button-padding-y: 5px;
 --button-padding-horizontal: 10px;

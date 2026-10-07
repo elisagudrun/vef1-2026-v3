@@ -10,8 +10,7 @@
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   grid-column: span var(--columns);
   gap: var(--gutter);
   width: 100%;
@@ -28,8 +27,8 @@
 }
 
 .card .content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: var(--gutter);
 }
 

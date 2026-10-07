@@ -4,22 +4,13 @@
  */
 .wrapper {
   display: grid;
-  grid-template-areas:
-    'header'
-    'main'
-    'footer';
   gap: var(--layout-gap);
   min-height: 100vh;
   margin-top: var(--layout-margin-top);
 }
 
-header {
-  grid-area: header;
-}
 
-nav {
-  grid-area: nav;
-}
+
 
 main {
   width: var(--width-offset);
@@ -27,6 +18,3 @@ main {
   margin: 0 auto;
 }
 
-footer {
-  grid-area: footer;
-}

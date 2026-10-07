@@ -6,7 +6,7 @@
 form {
   display: grid;
   gap: var(--gutter);
-  width: 100%;
+  width: 50%;
 }
 
 fieldset {
@@ -44,9 +44,5 @@ fieldset input[type='checkbox'] {
   margin-right: var(--spacing);
 }
 
-@media (width >= 700px) {
-  form {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 
