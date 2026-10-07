@@ -4,20 +4,20 @@
  */
 
 footer {
-  display: flex;
+  display: grid;
   justify-content: center;
-  padding: 20px;
+  padding: var(--gutter);
   text-align: center;
-  background-color: #996644;
-  border-top: 2px solid #000000;
+  background-color: var(--color-accent);
+  border-top: 2px solid var(--color-border);
 }
 
 footer .content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gutter);
   justify-content: center;
-  max-width: 800px;
+  max-width: var(--max-width)-footer;
 }
 
 footer ul {
@@ -26,4 +26,10 @@ footer ul {
 
 footer li a {
   word-break: break-all;
+}
+
+@media (width >= 700px) {
+  footer .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

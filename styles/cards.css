@@ -5,15 +5,15 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  gap: var(--gutter);
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  grid-column: span 12;
-  gap: 20px;
+  grid-column: span var(--columns);
+  gap: var(--gutter);
   width: 100%;
 }
 
@@ -24,20 +24,19 @@
 }
 
 .card h2 {
-  flex: 1;
   font-size: 2rem;
 }
 
 .card .content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--gutter);
 }
 
 .card .image img {
   display: block;
   width: 100%;
-  height: 300px;
+  height: var(--card-image-height);
   object-fit: cover;
   object-position: 50% 50%;
 }

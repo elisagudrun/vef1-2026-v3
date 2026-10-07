@@ -67,6 +67,12 @@
   --color-input-background: #ffffff;
 
   /** Annað **/
-
-  /* TODO hér þurfið þið að bæta við nokkrum stillingum */
+--layout-gap: 30px;
+--layout-margin-top: 10px;
+--card-image-height: 300px;
+--border-width: 1px;
+--form-padding: 10px;
+--button-padding-y: 5px;
+--button-padding-horizontal: 10px;
+--button-border-radius: 5px;
 }

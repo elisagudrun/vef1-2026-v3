@@ -3,12 +3,11 @@ table th, table td {
 }
 
 .table {
-    min-width: 700px;
+    min-width: var(--min-width-table);
 }
 
 .table-wrapper{
     overflow: auto;
-    background-color: pink;
 }
 
 @media (width >= 900px) {
